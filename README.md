@@ -1,2 +1,2 @@
-# com.java.Madlibs
+# Madlibs
 A short, silly stories app based on randomly generated words
