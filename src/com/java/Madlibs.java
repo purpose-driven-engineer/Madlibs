@@ -55,4 +55,15 @@ public class Madlibs {
         return line.equals("y") || line.equals("yes");
     }
 
+    //select templates randomly
+    private static String randomTemplate() {
+        return TEMPLATES.get((RANDOM.nextInt(TEMPLATES.size())));
+    }
+
+    //capitalise first characters
+    private static String capitalise(String c){
+        if (c == null || c.isEmpty()) return c;
+        if (c.length() == 1) return c.toUpperCase();
+        return Character.toUpperCase(c.charAt(0)) + c.substring(1);
+    }
 }
