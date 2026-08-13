@@ -47,6 +47,12 @@ public class Madlibs {
     }
 
     // confirm method
-
+    private static boolean confirm(Scanner scanner, String prompt){
+        System.out.println(prompt);
+        String line = scanner.nextLine();
+        if (line == null) return false;
+        line = line.trim().toLowerCase();
+        return line.equals("y") || line.equals("yes");
+    }
 
 }
